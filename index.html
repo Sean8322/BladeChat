@@ -5,10 +5,10 @@
 
 <meta http-equiv="Content-Language" content="en-us">
 
-<link href="./PeerJS chat demo_files/fancy.css" rel="stylesheet" type="text/css">
+<link href="./BladeChat/fancy.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="./PeerJS chat demo_files/jquery.min.js"></script>
-<script type="text/javascript" src="./PeerJS chat demo_files/peer.js"></script>
+<script type="text/javascript" src="./BladeChat/jquery.min.js"></script>
+<script type="text/javascript" src="./BladeChat/peer.js"></script>
 <script>
 // Connect to PeerJS, have server assign an ID instead of providing one
 // Showing off some of the configs available with PeerJS :).
@@ -203,7 +203,7 @@ var intervalID = window.setInterval(onkeydown, 1);
 <body cz-shortcut-listen="true">
 
   <div id="actions">
-    Your PeerJS ID is <span id="pid">97w685tpoy00ms4i</span><br>
+    Your PeerJS ID is <span id="pid"></span><br>
     Connect to a peer: <input type="text" id="rid" placeholder="Someone else&#39;s id"><input class="button" type="button" value="Connect" id="connect"><br><br>
 
     <form id="send">
@@ -222,12 +222,7 @@ var intervalID = window.setInterval(onkeydown, 1);
 
 
   <div class="warning browser">
-    <div class="important">Your browser version: <span id="browsers">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</span><br>
-  Currently <strong>Firefox 22+ and Google Chrome 26.0.1403.0 or above</strong> is required.</div>For more up to date compatibility
-information see <a href="http://peerjs.com/status">PeerJS WebRTC
-  Status</a><br>Note that this demo may also fail if you are behind
-stringent firewalls or both you and the remote peer and behind symmetric
-NATs.
+    
 
 <div class="log" style="color:#FF7500;text-shadow:none;padding:15px;background:#eee"><strong>Connection status</strong>:<br>Socket open<br></div>
 </div>
