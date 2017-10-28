@@ -91,10 +91,10 @@ a {
 button, input {
   font-size: 15px;
   font-family: Arial;
-  border: 1px solid #ccc;
+  border: 1px solid #64B5F6;
   border-right: 0;
   padding: 5px;
-  background: #fff;
+  background: #90CAF9;
   margin: 0;
   color: #444;
   text-shadow: 0 1px 0 rgba(255,255,255,0.4);
