@@ -5,10 +5,10 @@
 
 <meta http-equiv="Content-Language" content="en-us">
 
-<link href="./BladeChat/fancy.css" rel="stylesheet" type="text/css">
+<link href="/fancy.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="./BladeChat/jquery.min.js"></script>
-<script type="text/javascript" src="./BladeChat/peer.js"></script>
+<script type="text/javascript" src="/jquery.min.js"></script>
+<script type="text/javascript" src="/peer.js"></script>
 <script>
 // Connect to PeerJS, have server assign an ID instead of providing one
 // Showing off some of the configs available with PeerJS :).
@@ -46,7 +46,7 @@ function connect(c) {
   if (c.label === 'chat') {
     var chatbox = $('<div></div>').addClass('connection').addClass('active').attr('id', c.peer);
     var header = $('<h1></h1>').html('Chat with <strong>' + c.peer + '</strong>');
-    var messages = $('<div><em>Peer connected.</em></div>').addClass('messages');
+    var messages = $('<div><em>Blade connected.</em></div>').addClass('messages');
     chatbox.append(header);
     chatbox.append(messages);
 
@@ -203,11 +203,11 @@ var intervalID = window.setInterval(onkeydown, 1);
 <body cz-shortcut-listen="true">
 
   <div id="actions">
-    Your PeerJS ID is <span id="pid"></span><br>
-    Connect to a peer: <input type="text" id="rid" placeholder="Someone else&#39;s id"><input class="button" type="button" value="Connect" id="connect"><br><br>
+    Your Blade ID is <span id="pid"></span><br>
+    Connect to a Blade: <input type="text" id="rid" placeholder="Someone else&#39;s id"><input class="button" type="button" value="Connect" id="connect"><br><br>
 
     <form id="send">
-      <input type="text" id="text" placeholder="Enter message"><input class="button" type="submit" value="Send to selected peers">
+      <input type="text" id="text" placeholder="Enter message"><input class="button" type="submit" value="Send to selected Blades">
     </form>
     <button id="close">Close selected connections</button>
   </div>
