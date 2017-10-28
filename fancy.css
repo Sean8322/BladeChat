@@ -23,7 +23,7 @@ body,html {
   margin: 5px 0;
 }
 .connection.active {
-  border-color: #FF7500;
+  border-color: #1A237E;
 }
 h1 {
   font-size: 15px;
@@ -33,7 +33,7 @@ h1 {
   font-weight: 300;
 }
 .active h1 strong {
-  color: #FF7500;
+  color: #1A237E;
 }
 .file, em {
   color: #999;
